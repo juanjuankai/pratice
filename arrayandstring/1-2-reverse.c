@@ -13,7 +13,7 @@ void reverse(char* str) {
 		}
 		--end;     /*回退一个字符，最后一个为null字符*/
 
-		printf("%c\n", end);
+		printf("%c\n", (*end));
 
 		/*从字符串收尾开始交换两个字符,*/
 		/*直至两个指针在中间碰头*/
@@ -27,7 +27,7 @@ void reverse(char* str) {
 
 void test()
 {
-	char *str = (char*)"abcdefg";
+	char str[] = "abcdefg";
 	printf("%s\n", str);
 	reverse(str);
 	printf("%s\n", str);
